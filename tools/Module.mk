@@ -12,7 +12,8 @@ TOOLS_DIR	:= tools
 TOOLS_CFLAGS	:= -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual \
 		   -Wcast-align -Wwrite-strings -Wnested-externs -Winline \
 		   -W -Wundef -Wmissing-prototypes -Iinclude
-TOOLS_LDFLAGS	:= -Llib -li2c
+# TOOLS_LDFLAGS	:= -Llib -li2c
+TOOLS_LDFLAGS	:= lib/libi2c.a
 
 TOOLS_TARGETS	:= i2cdetect i2cdump i2cset i2cget
 
